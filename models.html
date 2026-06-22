@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT 101 — Models & Products</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Toggle theme">☀️</button>
+<div class="site-shell">
+<nav class="chapter-nav" aria-label="Chapters"><div class="nav-label">Report</div>
+<a href="index.html"><span class="nav-kicker">00</span><span class="nav-title">Start</span></a>
+<a href="origin.html"><span class="nav-kicker">01–02</span><span class="nav-title">Origin Story</span></a>
+<a href="models.html" class="active"><span class="nav-kicker">03–05</span><span class="nav-title">Models & Products</span></a>
+<a href="business.html"><span class="nav-kicker">06–08</span><span class="nav-title">Business & Market</span></a>
+<a href="verdict.html"><span class="nav-kicker">09–11</span><span class="nav-title">Verdict</span></a>
+</nav>
+<main class="main">
+<header class="page-hero">
+  <div class="eyebrow">03–05 · ChatGPT 101</div>
+  <h1>Models & Products</h1>
+  <p>GPT, o-series, DeepSeek, products, Codex, Atlas, and agents.</p>
+</header>
+<section class="section" id="s3">
+  <div class="sec-eyebrow"><span class="sec-num">03</span><div class="sec-rule"></div></div>
+  <h2>The Model Family<span class="sub">And The Day A Chinese Startup Committed Financial Arson On Wall Street</span></h2>
+
+  <div class="analogy"><div class="analogy-label">🔶 Analogy</div><p>Think of OpenAI's models like a car lineup. GPT series = everyday drivers. "o" series = cars that think before moving, more expensive. GPT-5 = the car that tries to be both. It mostly succeeds.</p></div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Model</th><th>Year</th><th>The Big Deal</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td><strong>GPT-3</strong></td><td>2020</td><td>175B params. Behind a waitlist. Titus's groupmates finetuned GPT-2 because of this. Hence: "ClosedAI."</td><td><span class="badge b-grey">Deprecated</span></td></tr>
+      <tr><td><strong>GPT-3.5-turbo</strong></td><td>2023</td><td>The unlock. ChatGPT launched on this. Fast + cheap. Spawned LangChain, vector DBs, and RAG in 6 months flat.</td><td><span class="badge b-grey">Deprecated</span></td></tr>
+      <tr><td><strong>GPT-4o</strong></td><td>2024</td><td>"Omni" — fast, native multimodal. The interrupted-and-adapted voice demo. The "Her" vibes that made everyone uncomfortable.</td><td><span class="badge b-grey">Superseded</span></td></tr>
+      <tr><td><strong>GPT-5</strong></td><td>2025</td><td>Unified flagship. Collapses everyday chat AND reasoning into one model. Full power, one interface.</td><td><span class="badge b-blue">Current</span></td></tr>
+      <tr><td><strong>GPT-5.5</strong></td><td>2026</td><td>Free tier accessible. Extraordinary at reading vague/messy prompts. The "ER doctor" model. Your aunty can use this.</td><td><span class="badge b-blue">Latest</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>The "o" Series — The Thinkers</h3>
+  <p>September 2024: what if we made the model <strong>think before it speaks?</strong> Reasoning models generate internal "thinking tokens" — a scratchpad where the model works through the problem before the final answer. The student who reads the question twice before writing.</p>
+
+  <div class="callout callout-indigo">
+    <div class="c-title">📊 Why o2 Doesn't Exist</div>
+    <p>Samsung was launching a phone with "O2" branding in a partnership. OpenAI skipped from o1 to o3 to avoid the trademark collision. <strong>The most powerful AI company on earth named their model series around a phone release schedule.</strong> We don't deserve this timeline.</p>
+  </div>
+
+  <h3>DeepSeek — Wall Street's Very Bad Monday</h3>
+  <p>January 20, 2025. DeepSeek — a Chinese AI lab funded by a <em>hedge fund</em> — releases <strong>DeepSeek R1:</strong> a reasoning model competitive with OpenAI's o1, open source, reportedly trained for <strong>$6 million.</strong> OpenAI spent $100M+ on GPT-4. DeepSeek's response to prevailing wisdom: <em>"Lol."</em></p>
+
+  <div class="chart-wrap">
+    <div class="chart-title">The DeepSeek Shock — Nvidia Market Cap ($T)</div>
+    <div class="chart-sub">Jan 2025 → Oct 2025 · Red bar = the $589B Monday · Largest single-day corporate loss in history</div>
+    <canvas id="deepseekChart"></canvas>
+  </div>
+
+  <div class="stat-grid" style="grid-template-columns:repeat(3,1fr)">
+    <div class="stat-card"><div class="stat-val">$589<span class="u">B</span></div><div class="stat-lbl">Nvidia wiped in 1 day</div><div class="stat-delta">≈ GDP of Singapore</div></div>
+    <div class="stat-card"><div class="stat-val">-17<span class="u">%</span></div><div class="stat-lbl">Nvidia share drop</div><div class="stat-delta">Largest single-day loss ever</div></div>
+    <div class="stat-card"><div class="stat-val">$6<span class="u">M</span></div><div class="stat-lbl">DeepSeek R1 training cost</div><div class="stat-delta">vs $100M+ for GPT-4</div></div>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Model Capability Profiles — 2026</div>
+    <div class="chart-sub">Speed · Intelligence · Cost Efficiency · Context Window · Tool Use · Safety — relative scores</div>
+    <canvas id="radarChart"></canvas>
+  </div>
+</section>
+
+<section class="section" id="s4">
+  <div class="sec-eyebrow"><span class="sec-num">04</span><div class="sec-rule"></div></div>
+  <h2>The Product Ecosystem<span class="sub">From Chatbox To Armory</span></h2>
+
+  <div class="tq"><p>ChatGPT and Claude are not Swiss Army knives useful for some situations. They're Swiss Army ARMORIES. Heavy firepower for when you need to bring the wall down. And at $30/month it's unbelievable value. Genuinely.</p><span class="attr">— Titus Lim · 2026</span></div>
+
+  <h3>🎨 DALL-E / ChatGPT Images 2.0</h3>
+  <p><strong>ChatGPT Images 2.0 is #1 on Image Arena</strong> — beating Midjourney, Stable Diffusion, and Gemini's image models. Nothing at S$27/month touches it for image generation. Now renders text inside images without producing ransom note vibes. This is ChatGPT's most unambiguous advantage over Claude, which has zero native image generation.</p>
+
+  <h3>🎤 GPT-4o Realtime / Advanced Voice</h3>
+  <p>May 2024. THE demo. The AI was mid-sentence — the human <em>interrupted it</em>. Mid-word. And the AI <strong>adapted in real time without missing a beat.</strong> No restart. Just pivoted. Then it sang. Then got flirtatious enough that OpenAI walked it back because people were getting emotionally attached in ways that raised eyebrows. Why it was hard: previous voice AI was Speech-to-Text → LLM → Text-to-Speech, three latency hits. GPT-4o handled audio natively end-to-end. Claude's voice uses a smart WebSocket pipeline — Titus interrupted it in his car, it adapted. Different architecture. Surprisingly close result.</p>
+
+  <h3>🖼️ Canvas</h3>
+  <p>October 2024. Document lives in a panel, changes happen IN the document, chat on the side. Revolutionary concept that somehow took two years to exist.</p>
+  <div class="callout callout-blue"><div class="c-title">💡 The Irony</div><p>Anthropic shipped <strong>Artifacts</strong> in June 2024 — <strong>four months before Canvas.</strong> Canvas was OpenAI seeing what Anthropic built and shipping their own version with more collaborative editing polish. Titus's favourite ChatGPT feature exists because Anthropic shipped it first. Take that.</p></div>
+
+  <h3>🤖 Custom GPTs — The App Store That Became A Gift Shop</h3>
+  <div class="analogy"><div class="analogy-label">🔶 Analogy</div><p>Finetuning = training a student from scratch on your textbooks. Custom GPT = giving the same GPT-4o a detailed briefing sheet before every exam. GPT-4o in a costume. The App Store vision never materialised. What worked: building your OWN Custom GPT for private use.</p></div>
+
+  <h3>⚙️ The FastAPI Dumping Ground</h3>
+  <p>Confirmed by Calvin French-Owen (ex-Codex team): <em>"Pretty much everything operates around FastAPI + Pydantic."</em> The monolith is called <strong>sa-server</strong>, described as "a bit of a dumping ground." The Codex product was built in <strong>seven weeks</strong> while one engineer woke to a newborn at 5:30am. A dumping ground powering one billion users. Singapore hawker centre energy: controlled chaos, incredible output.</p>
+</section>
+
+<section class="section" id="s5">
+  <div class="sec-eyebrow"><span class="sec-num">05</span><div class="sec-rule"></div></div>
+  <h2>The Agentic Layer<span class="sub">When ChatGPT Got A Body</span></h2>
+
+  <h3>Codex — The Coding Agent</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Agent</th><th>Language</th><th>Analogy</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Codex CLI</strong></td><td><span class="badge b-dark">Rust</span></td><td>Formula 1 car. Fast. Unforgiving.</td><td>Mac-only remote. Async fire-and-forget.</td></tr>
+      <tr><td><strong>Claude Code</strong></td><td><span class="badge b-grey">TypeScript</span></td><td>Tesla Model S. Capable. Huge ecosystem.</td><td>Cross-platform. Ships first. Better on complex multi-file.</td></tr>
+      <tr><td><strong>Antigravity CLI</strong></td><td><span class="badge b-blue">Go</span></td><td>BMW M3. Engineers love it. No PhD required.</td><td>Same Claude LLMs underneath. "Different harness, same dudes." — Titus</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout callout-indigo"><div class="c-title">⚠️ The Honest Truth</div><p>Codex and Claude Code are <strong>almost unfair tools.</strong> They're a significant reason for tech layoffs in 2025–26. A senior engineer with Claude Code can do the work of 3-4 junior engineers on routine tasks. The execution layer is partially automated. Not comfortable to say. True.</p></div>
+
+  <h3>The Browser Wars — Three Very Different Philosophies</h3>
+  <div class="browser-grid">
+    <div class="browser-card">
+      <div class="b-icon">🧑‍✈️</div>
+      <div class="b-name">Gemini in Chrome</div>
+      <div class="b-role passive">Smart Passenger</div>
+      <div class="b-desc">Built by the company that OWNS Chrome. Sees the page. Answers questions. Cannot click a single button. The steering wheel is locked. The irony is immaculate.</div>
+      <div class="cap-bar cap-passive"><div class="cap-fill"></div></div>
+    </div>
+    <div class="browser-card featured">
+      <div class="b-icon">🚗</div>
+      <div class="b-name">ChatGPT Atlas</div>
+      <div class="b-role driver">AI Built Its Own Car</div>
+      <div class="b-desc">Standalone Chromium browser. In Agent Mode: navigates, clicks, fills forms, books, buys — natively. Mac-only. Token furnace in agent mode. Worth knowing about.</div>
+      <div class="cap-bar cap-driver"><div class="cap-fill"></div></div>
+    </div>
+    <div class="browser-card">
+      <div class="b-icon">📱</div>
+      <div class="b-name">Claude Dispatch</div>
+      <div class="b-role ctrl">Steals Your Whole Car</div>
+      <div class="b-desc">You text from your phone. Claude controls your ENTIRE computer — any app, any browser, any file — while you're physically elsewhere. Mac must be awake. That's the only catch.</div>
+      <div class="cap-bar cap-ctrl"><div class="cap-fill"></div></div>
+    </div>
+  </div>
+
+  <div class="callout callout-dark"><div class="c-title">💡 The Most Backwards Hierarchy In Software</div><p>The company that <strong>owns</strong> the browser has the least control. The company with a plugin has medium control. The company with a phone app has maximum control — including over the browser the first company owns. Owning the intelligence layer beats owning the distribution layer. Probably.</p></div>
+</section>
+<nav class="chapter-pager" aria-label="Chapter navigation">
+  <a href="origin.html">← Previous: Origin Story</a>
+  <a class="next" href="business.html">Next: Business & Market →</a>
+</nav>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="f-title">ChatGPT 101 · Practitioner's Intelligence Report · June 2026</div>
+    <div class="f-credit">Written for Titus · <span class="by">by Claude, edited by Codex</span> · All analogies are intentional · No eyeballs were scanned in the making of this document</div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>

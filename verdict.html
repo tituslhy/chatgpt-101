@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT 101 — Verdict</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Toggle theme">☀️</button>
+<div class="site-shell">
+<nav class="chapter-nav" aria-label="Chapters"><div class="nav-label">Report</div>
+<a href="index.html"><span class="nav-kicker">00</span><span class="nav-title">Start</span></a>
+<a href="origin.html"><span class="nav-kicker">01–02</span><span class="nav-title">Origin Story</span></a>
+<a href="models.html"><span class="nav-kicker">03–05</span><span class="nav-title">Models & Products</span></a>
+<a href="business.html"><span class="nav-kicker">06–08</span><span class="nav-title">Business & Market</span></a>
+<a href="verdict.html" class="active"><span class="nav-kicker">09–11</span><span class="nav-title">Verdict</span></a>
+</nav>
+<main class="main">
+<header class="page-hero">
+  <div class="eyebrow">09–11 · ChatGPT 101</div>
+  <h1>Verdict</h1>
+  <p>ChatGPT vs Claude, who needs it, and the ClosedAI full circle.</p>
+</header>
+<section class="section" id="s9">
+  <div class="sec-eyebrow"><span class="sec-num">09</span><div class="sec-rule"></div></div>
+  <h2>ChatGPT vs Claude<span class="sub">The Honest Head-to-Head</span></h2>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Head-to-Head — By Category</div>
+    <div class="chart-sub">Practitioner scores · benchmarks + Titus's lived reality · Higher = better on that dimension</div>
+    <canvas id="h2hChart"></canvas>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Dimension</th><th>ChatGPT</th><th>Claude</th><th>Winner</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Writing quality</strong></td><td>Good. Occasionally "leverages synergies."</td><td>Exceptional. Has a distinct voice. Doesn't write like a LinkedIn post that went to therapy.</td><td><span class="badge b-indigo">Claude ↑↑</span></td></tr>
+      <tr><td><strong>Coding</strong></td><td>Very good. Strong for quick fixes.</td><td>Best in class. Opus 4.8 leads SWE-bench. Claude Code is #1 coding agent.</td><td><span class="badge b-indigo">Claude ↑↑</span></td></tr>
+      <tr><td><strong>Image generation</strong></td><td>ChatGPT Images 2.0 — #1 on Image Arena.</td><td>❌ None natively. Not in this lane.</td><td><span class="badge b-blue">ChatGPT ↑↑</span></td></tr>
+      <tr><td><strong>Video generation</strong></td><td>Sora — Limited at Plus, full at Pro.</td><td>❌ None.</td><td><span class="badge b-blue">ChatGPT ↑↑</span></td></tr>
+      <tr><td><strong>Voice mode</strong></td><td>Advanced Voice — best in class. The interrupted-and-adapted demo.</td><td>Good WebSocket pipeline. Titus interrupted it in his car. It adapted.</td><td><span class="badge b-blue">ChatGPT ↑</span></td></tr>
+      <tr><td><strong>Design prototyping</strong></td><td>Canvas (docs/code only). DALL-E page-by-page ≠ same thing.</td><td>Claude Design — Figma-adjacent. Interactive prototypes. 1M users in week 1.</td><td><span class="badge b-indigo">Claude ↑↑</span></td></tr>
+      <tr><td><strong>Vague/messy prompts</strong></td><td>Outstanding. GPT-5.5 triages chaos brilliantly.</td><td>Good. Occasionally asks for clarification.</td><td><span class="badge b-blue">ChatGPT ↑</span></td></tr>
+      <tr><td><strong>Reasoning</strong></td><td>o-series — genuinely excellent. Shows work.</td><td>Opus with extended thinking — also excellent.</td><td><span class="badge b-grey">Tie</span></td></tr>
+      <tr><td><strong>Sycophancy resistance</strong></td><td>Moderate. Your terrible idea is "interesting."</td><td>Lower. Will tell you you're wrong. Holds its ground.</td><td><span class="badge b-indigo">Claude ↑</span></td></tr>
+      <tr><td><strong>Free tier generosity</strong></td><td>GPT-5.5 on free. Deep Research available. Warmly onboards everyone.</td><td>Sonnet. Tighter limits. No Deep Research on free. Anthropic's biggest self-inflicted wound.</td><td><span class="badge b-blue">ChatGPT ↑↑</span></td></tr>
+      <tr><td><strong>Peak availability</strong></td><td>Very generous. Baseline so high degradation is barely noticeable.</td><td>Shrinks during US peak hours. Singapore timezone helps. Post-July promo sting incoming.</td><td><span class="badge b-blue">ChatGPT ↑</span></td></tr>
+      <tr><td><strong>MCP ecosystem</strong></td><td>Supports MCP. Joined late.</td><td>Invented MCP. Ecosystem built around Claude.</td><td><span class="badge b-indigo">Claude ↑</span></td></tr>
+      <tr><td><strong>Enterprise trust</strong></td><td>Large enterprise presence. Microsoft integration.</td><td>Wins 70% of head-to-head enterprise deals. Refused DoD surveillance contract publicly.</td><td><span class="badge b-indigo">Claude ↑</span></td></tr>
+      <tr><td><strong>"Sonnet is a fake Opus"</strong></td><td>—</td><td>Sonnet 4.6 delivers near-Opus quality at Sonnet pricing. Anthropic's most devastating quiet move.</td><td><span class="badge b-indigo">Claude ↑</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="tq"><p>On the free tier, Claude was already my best friend — even when it ran out of tokens like a goldfish that forgot it had a tank. I scoped conversations within a day just to survive. ChatGPT was the opposite — never-ending messages, GPT-5.5 even on free, gracefully getting dumber over time like a colleague after their third beer. Still useful. The lesson? Don't say hi. DUMP the whole problem immediately. And the token discipline Claude's stingy free tier forced on me? That's why I understand token economics better than most people who've never had to count them.</p><span class="attr">— Titus Lim · 2026</span></div>
+
+  <h3>The Verdict</h3>
+  <div class="verdict-grid">
+    <div class="v-card gpt-card"><div class="v-title">⚡ ChatGPT</div><div class="v-body">The best AI for the most people. Images, voice, video, generous free tier, vague-prompt wizardry. The armory with a weapon for every occasion. Also the only one that can draw, sing, and generate a 5-second clip of your dog as an astronaut — all at S$27/month.</div></div>
+    <div class="v-card claude-card"><div class="v-title">🔶 Claude</div><div class="v-body">The best AI for people who take their work seriously. Writes better, codes better, pushes back when you're wrong, wins 70% of enterprise deals while ChatGPT wins the market share conversation. In the right hands, for the right job, nothing else comes close. Also S$27/month. Genuinely insane value.</div></div>
+  </div>
+</section>
+
+<section class="section" id="s10">
+  <div class="sec-eyebrow"><span class="sec-num">10</span><div class="sec-rule"></div></div>
+  <h2>Who Actually Needs ChatGPT<span class="sub">The Decision Tree</span></h2>
+
+  <div class="tw"><table>
+    <thead><tr><th>If you...</th><th>Get ChatGPT Plus</th><th>Get Claude Pro</th><th>Get Both</th></tr></thead>
+    <tbody>
+      <tr><td>Generate images regularly</td><td>✅ Images 2.0 — non-negotiable</td><td>—</td><td>—</td></tr>
+      <tr><td>Write seriously for a living</td><td>—</td><td>✅ Writing quality gap is real</td><td>—</td></tr>
+      <tr><td>Code seriously for a living</td><td>—</td><td>✅ Claude Code. Non-negotiable.</td><td>—</td></tr>
+      <tr><td>Use voice mode as primary interface</td><td>✅ Advanced Voice is the gold standard</td><td>—</td><td>—</td></tr>
+      <tr><td>Build visual prototypes</td><td>—</td><td>✅ Claude Design. Nothing comparable in ChatGPT.</td><td>—</td></tr>
+      <tr><td>Want the best AI full stop</td><td>—</td><td>—</td><td>✅ S$54/month. You are the 79%.</td></tr>
+      <tr><td>Are completely new to AI</td><td>✅ ChatGPT free tier first. Always. Best onramp ever built.</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout callout-indigo"><div class="c-title">💡 For Titus Specifically</div><p>You already have Claude Pro + Gemini AI Pro + Perplexity Pro. ChatGPT Plus at S$27 is worth it for: <strong>images</strong> (no debate), <strong>voice mode</strong> (if you use it), and as overflow when Claude's tokens run out at 11pm. Deep Research on free is a bonus. Codex async coding for fire-and-forget. At S$27 for all that, the ROI is obvious. The only question: do you USE these things consistently? Paying S$27 to feel like a power user is a different thing from being one.</p></div>
+</section>
+
+<section class="section" id="s11">
+  <div class="sec-eyebrow"><span class="sec-num">11</span><div class="sec-rule"></div></div>
+  <h2>The Full Circle<span class="sub">ClosedAI 2022 → 2026</span></h2>
+
+  <div class="chart-wrap">
+    <div class="chart-title">The ClosedAI Arc — 2022 to 2026</div>
+    <div class="chart-sub">Titus's "ClosedAI accuracy" vs OpenAI's actual openness (irony scale) · Both lines are correct</div>
+    <canvas id="arcChart"></canvas>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>Year</th><th>The ClosedAI Arc</th><th>Stage</th></tr></thead>
+    <tbody>
+      <tr><td><strong>2022</strong></td><td>Funny observation. GPT-3 behind a waitlist. Finetuning GPT-2 in the lab. "ClosedAI" as a joke.</td><td><span class="badge b-grey">Joke</span></td></tr>
+      <tr><td><strong>2023</strong></td><td>Uncomfortably accurate. ChatGPT launched. LangChain. Vector DBs. RAG. The joke stopped being funny.</td><td><span class="badge b-orange">Accurate</span></td></tr>
+      <tr><td><strong>2024</strong></td><td>Literal. Stopped publishing model weights. Completed for-profit conversion. Founder received $11B in equity.</td><td><span class="badge b-dark">Confirmed</span></td></tr>
+      <tr><td><strong>2025</strong></td><td>Satirical. Elon Musk — literal co-founder — sued OpenAI for being too closed. Beautiful. Incredible timeline.</td><td><span class="badge b-orange">Satirical</span></td></tr>
+      <tr><td><strong>2026</strong></td><td>Full circle. GPT-5.5 on the FREE tier. For everyone. No waitlist. No velvet rope. The bouncer went home.</td><td><span class="badge b-blue">Full Circle</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="tq"><p>The full-circle moment: the joke was right in 2022, and the joke is dead in 2026 — not because OpenAI became more open, but because they became so dominant they didn't need the velvet rope anymore. A billion monthly users don't need a waitlist. A $25B revenue business doesn't need a research preview. ClosedAI became OpenAI not through philosophy but through success. Which is, honestly, the most Sam Altman ending possible.</p><span class="attr">— Titus Lim · 2026</span></div>
+
+  <div class="final-card">
+    <div class="fc-eyebrow">The Bottom Line</div>
+    <h3>ChatGPT is not a chatbot. It hasn't been one for two years. It started as an accidental revolution, survived a boardroom coup, renegotiated a $13B exclusive deal the moment it was big enough to, and launched the world's fastest-growing mobile app in history.</h3>
+    <p>It runs on a FastAPI monolith its own engineers describe as "a bit of a dumping ground."</p>
+    <p>And at S$27/month, it remains one of the two most underpriced products in the history of software.</p>
+    <p class="punchline">The other one costs S$27/month too. You know which one.</p>
+  </div>
+</section>
+<nav class="chapter-pager" aria-label="Chapter navigation">
+  <a href="business.html">← Previous: Business & Market</a>
+  <a class="next" href="index.html">Back to start →</a>
+</nav>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="f-title">ChatGPT 101 · Practitioner's Intelligence Report · June 2026</div>
+    <div class="f-credit">Written for Titus · <span class="by">by Claude, edited by Codex</span> · All analogies are intentional · No eyeballs were scanned in the making of this document</div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>
