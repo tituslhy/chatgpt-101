@@ -16,13 +16,13 @@
 <nav class="chapter-nav" aria-label="Chapters"><div class="nav-label">Report</div>
 <a href="index.html"><span class="nav-kicker">00</span><span class="nav-title">Start</span></a>
 <a href="origin.html"><span class="nav-kicker">01–02</span><span class="nav-title">Origin Story</span></a>
-<a href="models.html" class="active"><span class="nav-kicker">03–05</span><span class="nav-title">Models & Products</span></a>
-<a href="business.html"><span class="nav-kicker">06–08</span><span class="nav-title">Business & Market</span></a>
-<a href="verdict.html"><span class="nav-kicker">09–11</span><span class="nav-title">Verdict</span></a>
+<a href="models.html" class="active"><span class="nav-kicker">03–06</span><span class="nav-title">Models & Products</span></a>
+<a href="business.html"><span class="nav-kicker">07–09</span><span class="nav-title">Business & Market</span></a>
+<a href="verdict.html"><span class="nav-kicker">10–12</span><span class="nav-title">Verdict</span></a>
 </nav>
 <main class="main">
 <header class="page-hero">
-  <div class="eyebrow">03–05 · ChatGPT 101</div>
+  <div class="eyebrow">03–06 · ChatGPT 101</div>
   <h1>Models & Products</h1>
   <p>GPT, o-series, DeepSeek, products, Codex, Atlas, and agents.</p>
 </header>
@@ -138,6 +138,74 @@
   </div>
 
   <div class="callout callout-dark"><div class="c-title">💡 The Most Backwards Hierarchy In Software</div><p>The company that <strong>owns</strong> the browser has the least control. The company with a plugin has medium control. The company with a phone app has maximum control — including over the browser the first company owns. Owning the intelligence layer beats owning the distribution layer. Probably.</p></div>
+</section>
+
+<section class="section" id="s6">
+  <div class="sec-eyebrow"><span class="sec-num">06</span><div class="sec-rule"></div></div>
+  <h2>How To Use ChatGPT<span class="sub">The Actual Operating Manual</span></h2>
+
+  <div class="callout callout-blue"><div class="c-title">The Rule</div><p>ChatGPT is not one product anymore. It is a chat app, research assistant, image studio, voice interface, spreadsheet analyst, custom-tool launcher, coding agent, browser, and app connector layer wearing the same logo. The mistake is asking "Can ChatGPT do this?" The better question is: <strong>which surface should I use?</strong></p></div>
+
+  <h3>The Surfaces</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Surface</th><th>Use it for</th><th>Do not use it for</th></tr></thead>
+    <tbody>
+      <tr><td><strong>ChatGPT app</strong></td><td>Daily thinking, writing, tutoring, ideation, summaries, prompts, analysis, images, voice, projects, GPTs, files, and connected apps.</td><td>Large codebase changes where the model needs repo access, terminal output, tests, and file edits.</td></tr>
+      <tr><td><strong>Projects</strong></td><td>Long-running work with context: a course, client, research theme, trip, business plan, writing project, or personal operating system.</td><td>One-off questions. Do not turn every random chat into a project.</td></tr>
+      <tr><td><strong>Custom GPTs</strong></td><td>Repeatable workflows: your investing analyst, lesson planner, writing editor, prompt coach, sales-call prep bot, or internal SOP assistant.</td><td>Things that need fresh judgment every time. A GPT is a reusable brief, not a magic employee.</td></tr>
+      <tr><td><strong>GPTs by others</strong></td><td>Quick access to niche tools, community workflows, tutoring formats, and specialized assistants you do not want to configure yourself.</td><td>Anything private, sensitive, or business-critical unless you understand what data and actions the GPT uses.</td></tr>
+      <tr><td><strong>Connected apps</strong></td><td>Pulling context from Google Drive, SharePoint, GitHub, Notion, Linear, Dropbox, Box, Teams, Outlook, and other work systems without copy-paste.</td><td>Blindly granting access to everything. Connect the minimum set of sources needed for the job.</td></tr>
+      <tr><td><strong>Codex app / cloud</strong></td><td>Async coding: implement features, fix bugs, explain codebases, run tests, prepare PRs, and hand back diffs for review.</td><td>Micro-edits where opening the repo yourself is faster.</td></tr>
+      <tr><td><strong>Codex CLI</strong></td><td>Terminal-first repo work: local edits, test loops, debugging, refactors, scripts, and disciplined engineering tasks.</td><td>Vague product thinking. Give it a concrete task and a repo.</td></tr>
+      <tr><td><strong>Codex IDE/editor</strong></td><td>Interactive coding while you stay close to the files: pair-programming, review, focused changes, and context-aware edits.</td><td>Fire-and-forget multi-hour work. Use cloud/app for that.</td></tr>
+      <tr><td><strong>Atlas</strong></td><td>Web work with context: summarize pages, compare products, research across tabs, remember browsing context, and let agent mode act in the browser.</td><td>Sensitive transactions without supervision. Browser agents can click the wrong thing with confidence.</td></tr>
+      <tr><td><strong>Mobile / desktop app</strong></td><td>Fast capture: voice notes, screenshots, photos, files, dictation, quick questions, and turning messy context into structured output.</td><td>Deep multi-file coding or huge research jobs when a larger screen and saved project context matter.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>The Feature Map</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Feature</th><th>Best use</th><th>Titus translation</th></tr></thead>
+    <tbody>
+      <tr><td><strong>GPT-5.5 chat</strong></td><td>General intelligence, messy prompts, planning, explanation, editing, critique, and fast everyday work.</td><td>The default brain. Dump the whole problem in one go.</td></tr>
+      <tr><td><strong>Reasoning models</strong></td><td>Math, strategy, complex decisions, debugging logic, multi-step analysis, and "think before answering" tasks.</td><td>Use when the answer has to survive cross-examination.</td></tr>
+      <tr><td><strong>Search</strong></td><td>Fresh facts, source-backed answers, products, places, companies, current events, and anything time-sensitive.</td><td>Use when stale confidence is expensive.</td></tr>
+      <tr><td><strong>Deep Research</strong></td><td>Long reports, competitive analysis, market scans, literature reviews, buying decisions, and sourced synthesis.</td><td>Perplexity-style research, but inside the ChatGPT stack.</td></tr>
+      <tr><td><strong>ChatGPT agent</strong></td><td>Multi-step browser and knowledge-work tasks: research, forms, bookings, comparison, and compiling briefs.</td><td>Delegate the workflow, but stay close enough to stop a bad click.</td></tr>
+      <tr><td><strong>Data analysis</strong></td><td>Spreadsheets, CSVs, charts, Python-backed inspection, cleaning messy data, and finding patterns in files.</td><td>Your analyst intern, except it actually writes the code.</td></tr>
+      <tr><td><strong>File uploads / library</strong></td><td>Ask questions about PDFs, docs, slides, spreadsheets, images, and saved source material.</td><td>Stop screenshotting everything. Upload the thing.</td></tr>
+      <tr><td><strong>Images</strong></td><td>Generate, edit, restyle, mock up, storyboard, create product visuals, thumbnails, diagrams, and visual variations.</td><td>ChatGPT's cleanest Claude-beating lane.</td></tr>
+      <tr><td><strong>Sora / video</strong></td><td>Short video generation, concept clips, motion references, ad ideas, visual experiments, and storyboards.</td><td>Not your final production house. Very useful for showing intent.</td></tr>
+      <tr><td><strong>Voice mode</strong></td><td>Driving, walking, rehearsing, language practice, coaching, brainstorming, and hands-free explanation.</td><td>Use it when typing is the bottleneck.</td></tr>
+      <tr><td><strong>Record</strong></td><td>Capture and summarize meetings, calls, lectures, field notes, and voice memos.</td><td>Turn spoken mess into notes, tasks, and decisions.</td></tr>
+      <tr><td><strong>Canvas</strong></td><td>Drafting and editing documents or code in a side panel with iterative changes.</td><td>Good for writing and code documents. It is not Claude Design.</td></tr>
+      <tr><td><strong>Tasks</strong></td><td>Scheduled reminders, recurring checks, automated prompts, and lightweight personal operations.</td><td>Useful when "ask me later" should not rely on your memory.</td></tr>
+      <tr><td><strong>Pulse</strong></td><td>Proactive updates from your context: morning briefings, follow-ups, reminders, and personalized digests.</td><td>ChatGPT stops waiting for you to ask.</td></tr>
+      <tr><td><strong>Memory</strong></td><td>Persistent preferences, personal context, recurring constraints, and "remember how I like this done."</td><td>Powerful, but audit it. Bad memory creates bad defaults.</td></tr>
+      <tr><td><strong>Custom instructions / personality</strong></td><td>Set durable tone, formatting, assumptions, role, and response preferences across chats.</td><td>Configure the assistant before blaming the assistant.</td></tr>
+      <tr><td><strong>Study Mode</strong></td><td>Learning by questioning, hints, guided practice, and checking understanding instead of spoon-feeding answers.</td><td>The tutor mode. Less answer vending machine, more coach.</td></tr>
+      <tr><td><strong>Shopping research</strong></td><td>Compare products, narrow options, understand trade-offs, and build shortlists.</td><td>Good for narrowing. Still verify before spending real money.</td></tr>
+      <tr><td><strong>Temporary Chat</strong></td><td>One-off sensitive or throwaway conversations that should not shape future context.</td><td>Use when the chat should leave no personality residue.</td></tr>
+      <tr><td><strong>Shared links</strong></td><td>Share a conversation or artifact with someone else for review.</td><td>Convenient. Check the contents before sending.</td></tr>
+      <tr><td><strong>Apps / MCP apps</strong></td><td>Use external tools and business systems inside ChatGPT through approved app connections.</td><td>The serious version of plugins: your tools come to the chat.</td></tr>
+      <tr><td><strong>GPT actions</strong></td><td>Let custom GPTs call external APIs, internal tools, and structured workflows.</td><td>Where a GPT stops being a persona and starts being an interface.</td></tr>
+      <tr><td><strong>Work with Apps</strong></td><td>Use the desktop app with local work context such as supported editors, screenshots, and app-aware prompts.</td><td>Useful when the current screen is the prompt.</td></tr>
+      <tr><td><strong>1-800-ChatGPT</strong></td><td>Phone and messaging access when the normal app is not the right interface.</td><td>Niche, but real: ChatGPT as a phone line.</td></tr>
+      <tr><td><strong>Health</strong></td><td>Understand medical information, prepare questions, and organize symptoms or notes for a professional.</td><td>Use as a translator, not a doctor.</td></tr>
+      <tr><td><strong>Codex PR review</strong></td><td>Review diffs, catch bugs, suggest tests, and reason about changes before merge.</td><td>The reviewer that actually read the patch.</td></tr>
+      <tr><td><strong>Codex plugins</strong></td><td>Bring approved apps and tools into Codex workflows for richer repo and workspace automation.</td><td>The ecosystem layer. This is where maturity starts to matter.</td></tr>
+      <tr><td><strong>Security review with Codex</strong></td><td>Ask Codex to inspect risky diffs, threat-model code paths, look for obvious vulnerabilities, and propose fixes.</td><td>Use it before the audit, not after the incident.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>The Practical Split</h3>
+  <div class="stat-grid" style="grid-template-columns:repeat(3,1fr)">
+    <div class="stat-card"><div class="stat-val">Think</div><div class="stat-lbl">ChatGPT app</div><div class="stat-delta">Writing, research, analysis, voice, images, projects, GPTs</div></div>
+    <div class="stat-card"><div class="stat-val">Build</div><div class="stat-lbl">Codex</div><div class="stat-delta">Repos, tests, PRs, debugging, refactors, engineering loops</div></div>
+    <div class="stat-card"><div class="stat-val">Browse</div><div class="stat-lbl">Atlas</div><div class="stat-delta">Page context, web tasks, agent mode, research across tabs</div></div>
+  </div>
+
+  <div class="callout callout-dark"><div class="c-title">Compared With Claude Design</div><p>Claude Design is the Figma-like frontend prototyping lane: build interactive UI mockups fast, inspect the feel, iterate visually. ChatGPT's equivalent stack is split: <strong>Images</strong> for visual assets, <strong>Canvas</strong> for docs/code, <strong>Codex</strong> for real implementation, and <strong>Atlas</strong> for web-context work. More surfaces. More power. Also more chances to pick the wrong tool.</p></div>
 </section>
 <nav class="chapter-pager" aria-label="Chapter navigation">
   <a href="origin.html">← Previous: Origin Story</a>

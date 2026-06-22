@@ -139,10 +139,10 @@
     charts.h2h = createChart('h2hChart', {
       type:'bar',
       data:{
-        labels:['Writing','Coding','Image Gen','Voice','Design Proto','Reasoning','Enterprise Trust','Free Tier','Instruction Follow','Sycophancy Resistance'],
+        labels:['Writing','CLI Copilots','App Coding','Image Gen','Voice','Design Proto','Reasoning','Enterprise Trust','Free Tier','Instruction Follow','Sycophancy Resistance'],
         datasets:[
-          { label:'ChatGPT', data:[68,72,95,88,20,82,72,88,72,55], backgroundColor:C.blue,   borderRadius:4, borderSkipped:false },
-          { label:'Claude',  data:[92,92,5,72,90,88,88,42,90,88],  backgroundColor:C.indigo, borderRadius:4, borderSkipped:false },
+          { label:'ChatGPT', data:[68,95,80,95,88,20,82,72,94,72,55], backgroundColor:C.blue,   borderRadius:4, borderSkipped:false },
+          { label:'Claude',  data:[92,95,85,5,72,90,88,88,36,90,88],  backgroundColor:C.indigo, borderRadius:4, borderSkipped:false },
         ]
       },
       options:{ indexAxis:'y', responsive:true,
